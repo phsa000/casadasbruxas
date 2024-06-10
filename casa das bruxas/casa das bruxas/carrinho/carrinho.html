@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="carrinho.css">
+    <title>Carrinho - Casa das Bruxas</title>
+</head>
+<body>
+    <header>
+        <section class="all">
+            <img src="../imagens/carrinho1.png" alt="" draggable="false">
+            <div class="icones">
+                <a class="fas fa-home" href="../pagina principal/index.html">
+                    <img src="../imagens/house64.png" alt="" class="home-icon" draggable="false">
+                </a>
+            </div>
+        </section>
+    </header>
+
+        <!-- main carrinho -->
+    <main>
+        <section class="container mt-5"> <!-- margem de cima -->
+            <h1 class="text-center">Carrinho de Compras</h1>
+            <!-- <div class="itemcarrinho"> -->
+            <!-- card produto 1 -->
+                <!-- <img src="../imagens/asas de morcego.png" alt="Asas de Morcego">
+                <div>
+                    <h4>100g de Asa de Morcego</h4>
+                    <h6>Quantidade: <span></span></h6>
+                    <h5>Preço: R$35,90</h5>
+                </div>
+                <div>
+                    <h4>Total: R$35,90</h4>
+                </div>
+            </div> -->
+            <div id="AsaMorcego" style="display: none;">
+                <div class="bordaProdutos">
+                    <div class="divProdutos">
+                        <button class="botaoImagem">
+                            <a href="../pagina dos produtos/asaDeMorcego.html">
+                                <img class="produtosImagem" src="../imagens/asas de morcego.png" alt="">
+                            </a>
+                        </button>
+                        <button class="botaoCarrinho"><img class="carrinhoIcon" src="../Imagens/cart.png" alt="carrinho de compras"></button>
+                    </div>
+                    <p class="nomeProduto">Asa de Morcego<span class="preco"></span></p>
+                    <p>Quantidade: <span id="qtdNumero"></span></p>
+                </div>
+            </div>
+            <!-- capa invisivel -->
+            <div id="CapaInvisivel" style="display: none;">
+                <div class="bordaProdutos">
+                    <div class="divProdutos">
+                        <button class="botaoImagem">
+                            <a href="../pagina dos produtos/capaInvisivel.html">
+                                <img class="produtosImagem" src="../imagens/capa invisivel.png" alt="">
+                            </a>
+                        </button>
+                        <button class="botaoCarrinho"><img class="carrinhoIcon" src="../Imagens/cart.png" alt="carrinho de compras"></button>
+                    </div>
+                    <p class="nomeProduto">Capa Invisivel<span class="preco"></span></p>
+                    <p>Quantidade: <span id="qtdNumero"></span></p>
+                </div>
+            </div>
+            <div class="resumocarrinho">
+            <!-- resumo carrinho -->
+                <h4>Subtotal: R$205,89</h4>
+                <a href="../comprar/comprar.html">
+                    <button class="btn btn-primary">Finalizar Compra</button>
+                </a>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
